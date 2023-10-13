@@ -34,14 +34,19 @@ public class MetricConvertor {
                 }
 
             } else {
+                scan.nextLine();
                 System.out.println("Jesus, come on man that is a letter.");
             }
         } while (valid);
 
         measureMile = measureMeter * mathMile;
         measureFeet = measureMeter * mathFeet;
-        measureInch = measureInch * mathInch;
+        measureInch = measureMeter * mathInch;
 
+        System.out.printf("Meters : %5.2f", measureMeter);
+        System.out.printf("\nMiles : %5.2f", measureMile);
+        System.out.printf("\nFeet : %7.2f", measureFeet);
+        System.out.printf("\nInches : %5.2f", measureInch);
 
     }
 }
